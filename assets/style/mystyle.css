@@ -1,0 +1,127 @@
+body {
+  background-color: #f8f9fa;
+}
+.login-form {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 50vh;
+}
+.login-title {
+  text-align: center;
+  margin: 50px 10px 0 10px;
+}
+.login-submit {
+  float: left;
+}
+.signup-form {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 50vh;
+  margin: 20px;
+}
+.signup-title {
+  text-align: center;
+  margin: 50px 10px 0 10px;
+}
+.sign-up-button {
+  float: right;
+  margin-top: 5px;
+}
+.todo-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.user-portal-title {
+  text-align: center;
+  margin: 100px 10px 0 10px;
+}
+.todo-list-container {
+  float: left;
+  border-top: 1px solid #6c757d;
+  border-right: 4px solid #ffc107;
+  border-bottom: 1px solid #6c757d;
+  border-left: 4px solid #ffc107;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0 20px 70px;
+  width: 100%;
+}
+.done-list-container {
+  float: right;
+  border-top: 1px solid #6c757d;
+  border-right: 4px solid #28a745;
+  border-bottom: 1px solid #6c757d;
+  border-left: 4px solid #28a745;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 70px 20px 0;
+  width: 100%;
+}
+.todo-list {
+  background-color: #baffbe;
+  border: 1px solid #baffbe;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.4s;
+  margin-top: 10px;
+}
+.todo-list:hover {
+  border: 1px solid #28a745;
+  transition: 0.4s;
+}
+.done-list {
+  background-color: #d1d1d1;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.4s;
+  margin-top: 10px;
+  text-decoration: line-through;
+  font-style: italic;
+}
+.done-list:hover {
+  border: 1px solid #3a3a3a;
+  transition: 0.4s;
+}
+.delete {
+  float: right;
+  transition: 0.3s;
+  color: #6c757d;
+  margin-left: 10px;
+}
+.delete:hover{
+  color: red;
+  transition: 0.3s;
+}
+.task-text {
+  margin-left: 5px;
+}
+.done-list-title{
+  margin-bottom: 15px;
+}
+.logout-button{
+  float: right;
+}
+.no-task-message{
+  text-align: center;
+  color: #888888;
+  margin-top: 10px;
+}
+.my-alerts{
+ margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-list-container{
+    margin: 20px 0 0 0;
+  }
+  .done-list-container{
+    margin: 20px 0 20px 0;
+  }
+  .my-container{
+    margin: 5px;
+  }
+}
